@@ -53,14 +53,6 @@ public class MainEquipo {
 
 		}
 		
-		/*public static void pedirDatosEquipos(Scanner sc, Equipo e) {
-			System.out.println("Introduce el nombre del equipo");
-			e.nombre = sc.nextLine();
-			for (int i = 0;i< e.listaNombres.length;i++) {
-					System.out.println("Introduce el nombre del jugador numero " + (i+1));
-					e.listaNombres[i] = sc.nextLine();
-			}
-		}*/
 
 }
 
