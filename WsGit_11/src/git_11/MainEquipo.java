@@ -26,7 +26,18 @@ public class MainEquipo {
 					equipos[i].listaNombres[j]= sc.nextLine();
 				}
 			}
+			
+			for(int i = 0;i< equipos.length;i++) {
+				// TOSTRING
+				System.out.println(equipos[i]);
+				// Mostrar los jugadores
+				equipos[i].mostrarJugadores();
+				// Devolver si existe un jugador
+				System.out.println("Introducir jugador para ver si esta en la lista");
+				String jugador = sc.nextLine();
+				System.out.println("El jugador existe en la lista ? : " + equipos[i].devolverSiExiste(jugador));
 
 	}
 
+}
 }
