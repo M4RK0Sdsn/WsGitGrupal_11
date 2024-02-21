@@ -36,8 +36,31 @@ public class MainEquipo {
 				System.out.println("Introducir jugador para ver si esta en la lista");
 				String jugador = sc.nextLine();
 				System.out.println("El jugador existe en la lista ? : " + equipos[i].devolverSiExiste(jugador));
+				// Devolver numero de jugadores
+				System.out.println(" El equipo tiene " + equipos[i].devolverNumeroJugadores() + " jugadores");
+				// Es Apto para jugar
+				System.out.println("Es el equipo apto para jugar ? : " + equipos[i].esAptoParaJugar());
+				// Es la lista de jugadores la misma 
+				
 
-	}
+				System.out.println("Es la lista de jugadores la misma ? : " + equipos[i].esIgualListaJugadores(equipos[0]));
+				// Es el equipo el mismo
+				
+				System.out.println("Es el equipo exactamente igual ? : " + equipos[i].esIgualEquipo(equipos[1]));
+				System.out.println("----------------------------------------------------------------------------------------------------");
+			}
+			sc.close();
+
+		}
+		
+		/*public static void pedirDatosEquipos(Scanner sc, Equipo e) {
+			System.out.println("Introduce el nombre del equipo");
+			e.nombre = sc.nextLine();
+			for (int i = 0;i< e.listaNombres.length;i++) {
+					System.out.println("Introduce el nombre del jugador numero " + (i+1));
+					e.listaNombres[i] = sc.nextLine();
+			}
+		}*/
 
 }
-}
+
